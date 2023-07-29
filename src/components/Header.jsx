@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FiShoppingBag } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart)
+
   return (
     <nav>
-      <h2>Logo Here.</h2>
+      <h2>Cart App</h2>
 
       <div>
         <Link to={'/'}>Home</Link>

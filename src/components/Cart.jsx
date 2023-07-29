@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 const Cart = () => {
     const { cartItems, subTotal, tax, shipping, total } = useSelector((state) => state.cart)
-    console.log(cartItems.quantity)
+    // console.log(cartItems.quantity)
     const dispatch = useDispatch();
     const increment = (id) => {
         dispatch({ type: "addToCart", payload: { id } })
